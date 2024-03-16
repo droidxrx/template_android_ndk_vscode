@@ -1,0 +1,26 @@
+{
+    "cmake.generator": "Ninja",
+    "cmake.cmakePath": "/usr/bin/cmake",
+    "cmake.configureOnOpen": false,
+    "cmake.parallelJobs": 10,
+    "clangd.arguments": [
+        "--background-index",
+        "--pch-storage=memory",
+        "--offset-encoding=utf-8",
+        "--header-insertion=never",
+        "--pretty",
+        "--clang-tidy",
+        "--completion-style=detailed",
+        "--compile-commands-dir=${workspaceFolder}/build"
+    ],
+    "clangd.path": "/opt/android_ndk/r25/toolchains/llvm/prebuilt/linux-x86_64/bin/clangd",
+    "[c]": {
+        "editor.formatOnSave": true
+    },
+    "[cpp]": {
+        "editor.formatOnSave": true
+    },
+    "[cmake]": {
+        "editor.formatOnSave": true
+    }
+}

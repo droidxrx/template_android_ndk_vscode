@@ -1,0 +1,54 @@
+buildType:
+    default: debug
+    choices:
+        debug:
+            short: Debug
+            long: Emit debug information
+            buildType: Debug
+        release:
+            short: Release
+            long: Optimize generated code
+            buildType: Release
+
+abi:
+    default: armeabi-v7a
+    choices:
+        armeabi-v7a:
+            short: armeabi-v7a
+            long: Android ABI armeabi-v7a
+            settings:
+                ANDROID_ABI: armeabi-v7a
+        arm64-v8a:
+            short: arm64-v8a
+            long: Android ABI arm64-v8a
+            settings:
+                ANDROID_ABI: arm64-v8a
+        x86:
+            short: x86
+            long: Android ABI x86
+            settings:
+                ANDROID_ABI: x86
+        x86_64:
+            short: x86_64
+            long: Android ABI x86_64
+            settings:
+                ANDROID_ABI: x86_64
+
+stl:
+    default: c++_static
+    choices:
+        c++_shared:
+            short: c++_shared
+            long: Android STL c++_shared
+            settings:
+                ANDROID_STL: c++_shared
+        c++_static:
+            short: c++_static
+            long: Android STL c++_static
+            settings:
+                ANDROID_STL: c++_static
+        none:
+            short: none
+            long: Android STL none
+            settings:
+                ANDROID_STL: none
